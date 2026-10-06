@@ -1,0 +1,20 @@
+{
+  "name": "TP reconstruction tomographique",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.askForKernelRestart": false
+      }
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
